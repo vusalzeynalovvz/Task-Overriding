@@ -8,11 +8,11 @@ namespace ConsoleApp1
 {
     public class Person
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public int Age { get; set; }
-        public int Weight { get; set; }
-        public int Height { get; set; }
+        private string Name { get; set; }
+        private string Surname { get; set; }
+        private int Age { get; set; }
+        private int Weight { get; set; }
+        private int Height { get; set; }
 
         public Person(string name, string surname, int age, int weight, int height)
         {
@@ -34,7 +34,7 @@ namespace ConsoleApp1
         public static void Main(string[] args)
         {
             Person person = new Person("Vusal", "Zeynalov", 19, 75, 180);
-            Console.WriteLine(person);
+            Console.WriteLine(person.ToString());
         }
     }
 }
